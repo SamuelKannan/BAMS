@@ -6,13 +6,16 @@ using TMPro;
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
-    [SerializeField] int baseScore = 1000;
+    [SerializeField] int baseScore = 100;
     [SerializeField] int correctPoints = 50;
     [SerializeField] int inCorrectPoints = 25;
+
+    private CameraSpeed cameraSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
-        //text = GetComponent<TextMeshProUGUI>();
+        cameraSpeed = GetComponent<CameraSpeed>();
     }
 
     // Update is called once per frame
@@ -22,7 +25,7 @@ public class PlayerStats : MonoBehaviour
     }
 
     //Score Functionality
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Correct")
         {
@@ -33,5 +36,16 @@ public class PlayerStats : MonoBehaviour
             scoreText.text = "Score = " + (baseScore - inCorrectPoints).ToString();
         }
     }
+
+    //When player exits a correct answer increase camera speed
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Correct")
+        {
+            
+        }
+    }
+
+
 
 }
