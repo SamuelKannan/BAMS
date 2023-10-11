@@ -258,6 +258,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 27020066}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &51589866
@@ -527,6 +528,8 @@ CanvasRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &65528755
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +614,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -699,6 +703,8 @@ Transform:
   m_Father: {fileID: 740455511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &78148372
@@ -2028,6 +2034,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &213603376
@@ -2469,6 +2476,8 @@ CanvasRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &281144915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2608,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!1 &444135688
@@ -3088,6 +3098,8 @@ SpriteRenderer:
 --- !u!1 &347106819
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &444135688
 >>>>>>> parent of 9cecef7 (v1.2)
 GameObject:
@@ -4671,6 +4683,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &999660039
@@ -5072,6 +5085,8 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &1111067528
@@ -5784,6 +5799,7 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1482367821
@@ -6099,6 +6115,8 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &1548718951
@@ -6875,6 +6893,7 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1705235664
@@ -7144,6 +7163,8 @@ SpriteRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &1750147895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7351,6 +7372,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -7621,6 +7643,8 @@ SpriteRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &1876858251
 GameObject:
   m_ObjectHideFlags: 0
@@ -7727,6 +7751,7 @@ RectTransform:
   m_AnchoredPosition: {x: 560.5, y: 288.5}
   m_SizeDelta: {x: 1121, y: 577}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -8035,6 +8060,8 @@ CanvasRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &1959991175
 GameObject:
   m_ObjectHideFlags: 0
@@ -8296,6 +8323,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &2002125630
@@ -8519,6 +8547,8 @@ CanvasRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &2029730119
 GameObject:
   m_ObjectHideFlags: 0
@@ -8559,6 +8589,7 @@ Transform:
   - {fileID: 1159171755}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -8781,6 +8812,8 @@ Transform:
   m_Father: {fileID: 740455511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &2039828176
@@ -9530,7 +9563,10 @@ SceneRoots:
   - {fileID: 1631235071}
   - {fileID: 830301812}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
   - {fileID: 1750147897}
@@ -9544,9 +9580,12 @@ SceneRoots:
   - {fileID: 162887895}
   - {fileID: 1111067532}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   - {fileID: 740455511}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
