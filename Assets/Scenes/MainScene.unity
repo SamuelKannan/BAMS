@@ -259,7 +259,6 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &51589866
@@ -531,8 +530,6 @@ CanvasRenderer:
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &65528755
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +614,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -707,8 +703,6 @@ Transform:
   m_Father: {fileID: 740455511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> Stashed changes
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
@@ -2041,7 +2035,6 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &213603376
@@ -2485,8 +2478,6 @@ CanvasRenderer:
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &281144915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,7 +2608,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -3108,8 +3098,6 @@ SpriteRenderer:
 --- !u!1 &347106819
 >>>>>>> Stashed changes
 =======
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &444135688
@@ -4696,7 +4684,6 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &999660039
@@ -5098,8 +5085,6 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 >>>>>>> Stashed changes
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
@@ -5815,7 +5800,6 @@ BoxCollider2D:
   m_EdgeRadius: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1482367821
@@ -6131,8 +6115,6 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> Stashed changes
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
@@ -6912,7 +6894,6 @@ BoxCollider2D:
   m_EdgeRadius: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1705235664
@@ -7184,8 +7165,6 @@ SpriteRenderer:
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &1750147895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7393,7 +7372,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -7667,8 +7645,6 @@ SpriteRenderer:
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 --- !u!1 &1876858251
 GameObject:
   m_ObjectHideFlags: 0
@@ -7775,7 +7751,6 @@ RectTransform:
   m_AnchoredPosition: {x: 560.5, y: 288.5}
   m_SizeDelta: {x: 1121, y: 577}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -8087,8 +8062,62 @@ CanvasRenderer:
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+<<<<<<< HEAD
+=======
+  m_GameObject: {fileID: 1959922956}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+>>>>>>> Stashed changes
+=======
+>>>>>>> parent of a9c18a4 (Revert "v1.2")
+=======
+>>>>>>> parent of f9eb3ce (v1.3)
 --- !u!1 &1959991175
 GameObject:
   m_ObjectHideFlags: 0
@@ -8351,7 +8380,6 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &2002125630
@@ -8577,8 +8605,55 @@ CanvasRenderer:
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+<<<<<<< HEAD
+=======
+  m_GameObject: {fileID: 2002125630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+>>>>>>> Stashed changes
+=======
+>>>>>>> parent of a9c18a4 (Revert "v1.2")
+=======
+>>>>>>> parent of f9eb3ce (v1.3)
 --- !u!1 &2029730119
 GameObject:
   m_ObjectHideFlags: 0
@@ -8619,7 +8694,6 @@ Transform:
   - {fileID: 1159171755}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -8843,8 +8917,6 @@ Transform:
   m_Father: {fileID: 740455511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> Stashed changes
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
@@ -9597,10 +9669,7 @@ SceneRoots:
   - {fileID: 830301812}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
-=======
->>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
@@ -9617,7 +9686,6 @@ SceneRoots:
   - {fileID: 1111067532}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   - {fileID: 740455511}
@@ -9626,5 +9694,14 @@ SceneRoots:
 >>>>>>> parent of 9cecef7 (v1.2)
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 9cecef7 (v1.2)
+<<<<<<< HEAD
+=======
+  - {fileID: 1588296624}
+>>>>>>> Stashed changes
+=======
+>>>>>>> parent of a9c18a4 (Revert "v1.2")
+=======
+>>>>>>> parent of f9eb3ce (v1.3)
