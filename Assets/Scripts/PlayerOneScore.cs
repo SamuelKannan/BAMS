@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerOneScore : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
-    [SerializeField] int baseScore = 1000;
+    [SerializeField] int baseScore = 100;
     [SerializeField] int correctPoints = 50;
     [SerializeField] int inCorrectPoints = 25;
     // Start is called before the first frame update
@@ -26,11 +26,11 @@ public class PlayerStats : MonoBehaviour
     {
         if (collision.gameObject.tag == "Correct")
         {
-            scoreText.text = "Score = " + (baseScore + correctPoints).ToString();
+            scoreText.text = "P1 Score = " + (baseScore + correctPoints).ToString();
         }
         else if (collision.gameObject.tag == "Incorrect")
         {
-            scoreText.text = "Score = " + (baseScore - inCorrectPoints).ToString();
+            scoreText.text = "P1 Score = " + (baseScore - inCorrectPoints).ToString();
         }
     }
 

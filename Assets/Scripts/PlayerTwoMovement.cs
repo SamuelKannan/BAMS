@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerTwoMovement : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D rb;
 
-    private Vector2 moveDirection;
+    private Vector2 movePlayerTwo;
 
     // Update is called once per frame
     void Update()
@@ -22,14 +22,13 @@ public class PlayerMovement : MonoBehaviour
 
     void ProcessInputs()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        float dirPlayerTwo = Input.GetAxisRaw("Player2");
 
-        moveDirection = new Vector2(moveX, moveY).normalized;
+        movePlayerTwo = new Vector2(dirPlayerTwo, 0).normalized;
     }
 
     void Move()
     {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        rb.velocity = new Vector2(movePlayerTwo.x * moveSpeed, 0);
     }
 }
