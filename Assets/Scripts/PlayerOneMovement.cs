@@ -8,7 +8,8 @@ public class PlayerOneMovement : MonoBehaviour
     public Rigidbody2D rb;
 
     private Vector2 movePlayerOne;
-    private float dirPlayerOne;
+    private float dirPlayerOneX;
+    private float dirPlayerOneY;
 
     // Update is called once per frame
     void Update()
@@ -23,14 +24,15 @@ public class PlayerOneMovement : MonoBehaviour
 
     void ProcessInputs()
     {
-        dirPlayerOne = Input.GetAxisRaw("Player1") * moveSpeed * Time.deltaTime;
+        dirPlayerOneX = Input.GetAxisRaw("Player1_Horizontal") * moveSpeed * Time.deltaTime;
+        dirPlayerOneY = Input.GetAxisRaw("Player1_Vertical") * moveSpeed * Time.deltaTime;
 
         //movePlayerOne = new Vector2(dirPlayerOne, 0).normalized;
     }
 
     void Move()
     {
-        transform.Translate(dirPlayerOne, 0, 0);
-        //rb.velocity = new Vector2(movePlayerOne.x * moveSpeed, 0);
+        //transform.Translate(dirPlayerOne, 0, 0);
+        rb.velocity = new Vector2(dirPlayerOneX, dirPlayerOneY);
     }
 }
