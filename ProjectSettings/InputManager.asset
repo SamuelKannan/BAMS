@@ -550,11 +550,11 @@ InputManager:
     axis: 5
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Player4
+    m_Name: Player2_Attack
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: ;
-    positiveButton: ''''
+    negativeButton: r
+    positiveButton: y
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

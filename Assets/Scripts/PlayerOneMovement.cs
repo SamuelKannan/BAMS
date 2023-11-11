@@ -24,15 +24,14 @@ public class PlayerOneMovement : MonoBehaviour
 
     void ProcessInputs()
     {
-        dirPlayerOneX = Input.GetAxisRaw("Player1_Horizontal") * moveSpeed * Time.deltaTime;
-        dirPlayerOneY = Input.GetAxisRaw("Player1_Vertical") * moveSpeed * Time.deltaTime;
+        dirPlayerOneX = Input.GetAxisRaw("Player1_Horizontal");
+        dirPlayerOneY = Input.GetAxisRaw("Player1_Vertical");
 
-        //movePlayerOne = new Vector2(dirPlayerOne, 0).normalized;
+        movePlayerOne = new Vector2(dirPlayerOneX, dirPlayerOneY).normalized;
     }
 
     void Move()
     {
-        //transform.Translate(dirPlayerOne, 0, 0);
-        rb.velocity = new Vector2(dirPlayerOneX, dirPlayerOneY);
+        rb.velocity = new Vector2(movePlayerOne.x, movePlayerOne.y) * moveSpeed * Time.deltaTime;
     }
 }

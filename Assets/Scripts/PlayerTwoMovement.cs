@@ -1,20 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerTwoMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    [SerializeField] TextMeshProUGUI playerTwoAttack;
+    [SerializeField] float targetTime = 7.0f;
+    Rigidbody2D pushedBody;
     public Rigidbody2D rb;
+    public float moveSpeed;
+    public float force;
+    
 
     private Vector2 movePlayerTwo;
+    private Vector2 pushDir;
+    private Vector3 attackDir;
     private float dirPlayerTwoX;
     private float dirPlayerTwoY;
+    private bool inContact = false;
+    private bool isReady = true;
 
     // Update is called once per frame
     void Update()
     {
         ProcessInputs();
+        Attack();
+        Timer();
     }
 
     void FixedUpdate()
@@ -24,15 +36,67 @@ public class PlayerTwoMovement : MonoBehaviour
 
     void ProcessInputs()
     {
-        dirPlayerTwoX = Input.GetAxisRaw("Player2_Horizontal") * moveSpeed * Time.deltaTime;
-        dirPlayerTwoY = Input.GetAxisRaw("Player2_Vertical") * moveSpeed * Time.deltaTime;
-
+        dirPlayerTwoX = Input.GetAxisRaw("Player2_Horizontal");
+        dirPlayerTwoY = Input.GetAxisRaw("Player2_Vertical");
         movePlayerTwo = new Vector2(dirPlayerTwoX, dirPlayerTwoY).normalized;
     }
 
     void Move()
     {
-        //transform.Translate(dirPlayerTwo, 0, 0);
-        rb.velocity = new Vector2(movePlayerTwo.x, movePlayerTwo.y);
+        rb.velocity = new Vector2(movePlayerTwo.x, movePlayerTwo.y) * moveSpeed * Time.deltaTime;
     }
+
+    void Timer()
+    {
+        if (isReady == false)
+        {
+            targetTime -= Time.deltaTime;
+            //Debug.Log("Target Time: " + targetTime);
+            if (targetTime <= 0.0f)
+            {
+                isReady = true;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player1" || collision.tag == "Player3" || collision.tag == "Player4")
+        {
+            pushedBody = collision.GetComponent<Rigidbody2D>();
+            attackDir = collision.transform.position - transform.position;
+            inContact = true;
+            //Debug.Log("OntriggerEnter2D");
+            //Debug.Log("Collision.tag: " + collision.tag + "inContact: " + inContact);
+
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player1" || collision.tag == "Player3" || collision.tag == "Player4")
+        {
+            inContact = false;
+            //Debug.Log("OntriggerExit2D");
+            //Debug.Log("Collision.tag: " + collision.tag + "inContact: " + inContact);
+        }
+        
+    }
+
+    void Attack()
+    {
+         if (Input.GetKeyDown("r") && inContact == true && isReady == true)
+         {
+            pushDir = attackDir.normalized * force;
+            pushedBody.AddRelativeForce(pushDir, ForceMode2D.Force);
+            isReady = false;
+            //Debug.Log("Attack");
+            //Debug.Log("inContact: " + inContact);
+
+         }
+    }
+
+
+
 }

@@ -26,11 +26,13 @@ public class PlayerOneScore : MonoBehaviour
     {
         if (collision.gameObject.tag == "Correct")
         {
-            scoreText.text = "P1 Score = " + (baseScore + correctPoints).ToString();
+            baseScore += correctPoints;
+            scoreText.text = "P1 Score = " + baseScore.ToString();
         }
         else if (collision.gameObject.tag == "Incorrect")
         {
-            scoreText.text = "P1 Score = " + (baseScore - inCorrectPoints).ToString();
+            baseScore -= inCorrectPoints;
+            scoreText.text = "P1 Score = " + baseScore.ToString();
         }
     }
 
