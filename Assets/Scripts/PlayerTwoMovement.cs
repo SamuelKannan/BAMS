@@ -18,9 +18,15 @@ public class PlayerTwoMovement : MonoBehaviour
     private Vector3 attackDir;
     private float dirPlayerTwoX;
     private float dirPlayerTwoY;
+    private float timeElasped;
     private bool inContact = false;
     private bool isReady = true;
 
+
+    void Start()
+    {
+        timeElasped = targetTime;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -50,11 +56,13 @@ public class PlayerTwoMovement : MonoBehaviour
     {
         if (isReady == false)
         {
-            targetTime -= Time.deltaTime;
-            //Debug.Log("Target Time: " + targetTime);
-            if (targetTime <= 0.0f)
+            timeElasped -= Time.deltaTime;
+            Debug.Log("Time Elapsed: " + timeElasped);
+            if (timeElasped <= 0.0f)
             {
                 isReady = true;
+                playerTwoAttack.text = "Push = Ready";
+                timeElasped = targetTime;
             }
         }
     }
@@ -91,6 +99,7 @@ public class PlayerTwoMovement : MonoBehaviour
             pushDir = attackDir.normalized * force;
             pushedBody.AddRelativeForce(pushDir, ForceMode2D.Force);
             isReady = false;
+            playerTwoAttack.text = "Push = Recharging";
             //Debug.Log("Attack");
             //Debug.Log("inContact: " + inContact);
 
