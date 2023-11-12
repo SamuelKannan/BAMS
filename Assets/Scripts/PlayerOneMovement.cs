@@ -7,8 +7,10 @@ public class PlayerOneMovement : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI playerAttack;
     [SerializeField] float targetTime = 7.0f;
+    AudioSource source;
     Rigidbody2D pushedBody;
-    public Rigidbody2D rb;
+    SpriteRenderer sprite;
+    Rigidbody2D rb;
     public float moveSpeed;
     public float force;
 
@@ -25,6 +27,9 @@ public class PlayerOneMovement : MonoBehaviour
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        source = GetComponent<AudioSource>();
+        sprite = GetComponent<SpriteRenderer>();
         timeElasped = targetTime;
     }
     // Update is called once per frame
@@ -67,6 +72,23 @@ public class PlayerOneMovement : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Incorrect" || collision.tag == "Obstacle")
+        {
+            sprite.color = Color.red;
+        }
+        else if (collision.tag == "Correct")
+        {
+            sprite.color = Color.green;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        sprite.color = Color.white;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player2" || collision.gameObject.tag == "Player3" || collision.gameObject.tag == "Player4")
@@ -98,6 +120,7 @@ public class PlayerOneMovement : MonoBehaviour
         {
             pushDir = attackDir.normalized * force;
             pushedBody.AddRelativeForce(pushDir, ForceMode2D.Force);
+            source.Play();
             isReady = false;
             playerAttack.text = "Push = Recharging";
             //Debug.Log("Attack");

@@ -10,7 +10,22 @@ public class PlayerOneScore : MonoBehaviour
     [SerializeField] int correctPoints = 50;
     [SerializeField] int inCorrectPoints = 25;
     [SerializeField] int obstaclepoints = 25;
-    
+    [SerializeField] GameObject explosion;
+
+    void Start()
+    {
+        explosion.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (baseScore <= 0)
+        {
+            Destroy(gameObject, 1.5f);
+            explosion.SetActive(true);
+        }
+    }
+
     //Score Functionality
     private void OnTriggerEnter2D(Collider2D collision)
     {
