@@ -67,11 +67,11 @@ public class PlayerFourMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Player1" || collision.tag == "Player2" || collision.tag == "Player3")
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2" || collision.gameObject.tag == "Player3")
         {
-            pushedBody = collision.GetComponent<Rigidbody2D>();
+            pushedBody = collision.gameObject.GetComponent<Rigidbody2D>();
             attackDir = collision.transform.position - transform.position;
             inContact = true;
             //Debug.Log("OntriggerEnter2D");
@@ -81,9 +81,9 @@ public class PlayerFourMovement : MonoBehaviour
 
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.tag == "Player1" || collision.tag == "Player2" || collision.tag == "Player3")
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2" || collision.gameObject.tag == "Player3")
         {
             inContact = false;
             //Debug.Log("OntriggerExit2D");

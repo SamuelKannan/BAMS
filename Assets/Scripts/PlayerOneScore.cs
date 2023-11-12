@@ -9,6 +9,7 @@ public class PlayerOneScore : MonoBehaviour
     [SerializeField] int baseScore = 100;
     [SerializeField] int correctPoints = 50;
     [SerializeField] int inCorrectPoints = 25;
+    [SerializeField] int obstaclepoints = 25;
     
     //Score Functionality
     private void OnTriggerEnter2D(Collider2D collision)
@@ -21,6 +22,11 @@ public class PlayerOneScore : MonoBehaviour
         else if (collision.gameObject.tag == "Incorrect")
         {
             baseScore -= inCorrectPoints;
+            scoreText.text = "P1 Score = " + baseScore.ToString();
+        }
+        else if (collision.gameObject.tag == "Obstacle")
+        {
+            baseScore -= obstaclepoints;
             scoreText.text = "P1 Score = " + baseScore.ToString();
         }
     }
