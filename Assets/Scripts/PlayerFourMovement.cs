@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class PlayerOneMovement : MonoBehaviour
+public class PlayerFourMovement : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI playerAttack;
     [SerializeField] float targetTime = 7.0f;
@@ -42,8 +42,8 @@ public class PlayerOneMovement : MonoBehaviour
 
     void ProcessInputs()
     {
-        dirPlayerX = Input.GetAxisRaw("Player1_Horizontal");
-        dirPlayerY = Input.GetAxisRaw("Player1_Vertical");
+        dirPlayerX = Input.GetAxisRaw("Player4_Horizontal");
+        dirPlayerY = Input.GetAxisRaw("Player4_Vertical");
         movePlayer = new Vector2(dirPlayerX, dirPlayerY).normalized;
     }
 
@@ -57,7 +57,7 @@ public class PlayerOneMovement : MonoBehaviour
         if (isReady == false)
         {
             timeElasped -= Time.deltaTime;
-            Debug.Log("Player1 Time Elapsed: " + timeElasped);
+            Debug.Log("Player4 Time Elapsed: " + timeElasped);
             if (timeElasped <= 0.0f)
             {
                 isReady = true;
@@ -69,7 +69,7 @@ public class PlayerOneMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player2" || collision.tag == "Player3" || collision.tag == "Player4")
+        if (collision.tag == "Player1" || collision.tag == "Player2" || collision.tag == "Player3")
         {
             pushedBody = collision.GetComponent<Rigidbody2D>();
             attackDir = collision.transform.position - transform.position;
@@ -83,7 +83,7 @@ public class PlayerOneMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player2" || collision.tag == "Player3" || collision.tag == "Player4")
+        if (collision.tag == "Player1" || collision.tag == "Player2" || collision.tag == "Player3")
         {
             inContact = false;
             //Debug.Log("OntriggerExit2D");
@@ -94,7 +94,7 @@ public class PlayerOneMovement : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetKeyDown("q") && inContact == true && isReady == true)
+        if (Input.GetKeyDown("/") && inContact == true && isReady == true)
         {
             pushDir = attackDir.normalized * force;
             pushedBody.AddRelativeForce(pushDir, ForceMode2D.Force);
@@ -105,5 +105,4 @@ public class PlayerOneMovement : MonoBehaviour
 
         }
     }
-
 }

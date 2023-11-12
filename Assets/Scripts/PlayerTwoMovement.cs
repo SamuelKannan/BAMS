@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerTwoMovement : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI playerTwoAttack;
+    [SerializeField] TextMeshProUGUI playerAttack;
     [SerializeField] float targetTime = 7.0f;
     Rigidbody2D pushedBody;
     public Rigidbody2D rb;
@@ -13,11 +13,11 @@ public class PlayerTwoMovement : MonoBehaviour
     public float force;
     
 
-    private Vector2 movePlayerTwo;
+    private Vector2 movePlayer;
     private Vector2 pushDir;
     private Vector3 attackDir;
-    private float dirPlayerTwoX;
-    private float dirPlayerTwoY;
+    private float dirPlayerX;
+    private float dirPlayerY;
     private float timeElasped;
     private bool inContact = false;
     private bool isReady = true;
@@ -42,14 +42,14 @@ public class PlayerTwoMovement : MonoBehaviour
 
     void ProcessInputs()
     {
-        dirPlayerTwoX = Input.GetAxisRaw("Player2_Horizontal");
-        dirPlayerTwoY = Input.GetAxisRaw("Player2_Vertical");
-        movePlayerTwo = new Vector2(dirPlayerTwoX, dirPlayerTwoY).normalized;
+        dirPlayerX = Input.GetAxisRaw("Player2_Horizontal");
+        dirPlayerY = Input.GetAxisRaw("Player2_Vertical");
+        movePlayer = new Vector2(dirPlayerX, dirPlayerY).normalized;
     }
 
     void Move()
     {
-        rb.velocity = new Vector2(movePlayerTwo.x, movePlayerTwo.y) * moveSpeed * Time.deltaTime;
+        rb.velocity = new Vector2(movePlayer.x, movePlayer.y) * moveSpeed * Time.deltaTime;
     }
 
     void Timer()
@@ -57,11 +57,11 @@ public class PlayerTwoMovement : MonoBehaviour
         if (isReady == false)
         {
             timeElasped -= Time.deltaTime;
-            Debug.Log("Time Elapsed: " + timeElasped);
+            Debug.Log("Player2 Time Elapsed: " + timeElasped);
             if (timeElasped <= 0.0f)
             {
                 isReady = true;
-                playerTwoAttack.text = "Push = Ready";
+                playerAttack.text = "Push = Ready";
                 timeElasped = targetTime;
             }
         }
@@ -94,12 +94,12 @@ public class PlayerTwoMovement : MonoBehaviour
 
     void Attack()
     {
-         if (Input.GetKeyDown("r") && inContact == true && isReady == true)
+         if (Input.GetKeyDown("t") && inContact == true && isReady == true)
          {
             pushDir = attackDir.normalized * force;
             pushedBody.AddRelativeForce(pushDir, ForceMode2D.Force);
             isReady = false;
-            playerTwoAttack.text = "Push = Recharging";
+            playerAttack.text = "Push = Recharging";
             //Debug.Log("Attack");
             //Debug.Log("inContact: " + inContact);
 

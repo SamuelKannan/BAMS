@@ -521,8 +521,8 @@ InputManager:
     m_Name: Player2_Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: f
-    positiveButton: h
+    negativeButton: g
+    positiveButton: j
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -537,23 +537,7 @@ InputManager:
     m_Name: Player2_Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: g
-    positiveButton: t
-    altNegativeButton: 
-    altPositiveButton: 
-    gravity: 1000
-    dead: 0.001
-    sensitivity: 1000
-    snap: 0
-    invert: 0
-    type: 0
-    axis: 5
-    joyNum: 0
-  - serializedVersion: 3
-    m_Name: Player2_Attack
-    descriptiveName: 
-    descriptiveNegativeName: 
-    negativeButton: r
+    negativeButton: h
     positiveButton: y
     altNegativeButton: 
     altPositiveButton: 
@@ -566,10 +550,10 @@ InputManager:
     axis: 5
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Player4
+    m_Name: Player3_Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: ;
+    negativeButton: l
     positiveButton: ''''
     altNegativeButton: 
     altPositiveButton: 
@@ -582,11 +566,11 @@ InputManager:
     axis: 5
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Player4
+    m_Name: Player3_Vertical
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: ;
-    positiveButton: ''''
+    positiveButton: p
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -598,11 +582,27 @@ InputManager:
     axis: 5
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Player4
+    m_Name: Player4_Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: ;
-    positiveButton: ''''
+    negativeButton: down
+    positiveButton: up
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 5
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: Player4_Horizontal
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: left
+    positiveButton: right
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

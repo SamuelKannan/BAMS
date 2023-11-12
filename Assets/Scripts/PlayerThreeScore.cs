@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-public class PlayerTwoScore : MonoBehaviour
+public class PlayerThreeScore : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int baseScore = 100;
@@ -16,13 +16,12 @@ public class PlayerTwoScore : MonoBehaviour
         if (collision.gameObject.tag == "Correct")
         {
             baseScore += correctPoints;
-            scoreText.text = "P2 Score = " + baseScore.ToString();
+            scoreText.text = "P3 Score = " + baseScore.ToString();
         }
         else if (collision.gameObject.tag == "Incorrect")
         {
             baseScore -= inCorrectPoints;
-            scoreText.text = "P2 Score = " + baseScore.ToString();
+            scoreText.text = "P3 Score = " + baseScore.ToString();
         }
     }
-
 }

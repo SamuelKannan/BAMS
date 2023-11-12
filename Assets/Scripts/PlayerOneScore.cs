@@ -9,18 +9,7 @@ public class PlayerOneScore : MonoBehaviour
     [SerializeField] int baseScore = 100;
     [SerializeField] int correctPoints = 50;
     [SerializeField] int inCorrectPoints = 25;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //text = GetComponent<TextMeshProUGUI>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     //Score Functionality
     private void OnTriggerEnter2D(Collider2D collision)
     {
