@@ -5,12 +5,14 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] Sprite explosion;
+    AudioSource source;
     SpriteRenderer sprite;
     
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        source = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -20,7 +22,8 @@ public class Obstacle : MonoBehaviour
             collision.gameObject.tag == "Player3" || collision.gameObject.tag == "Player4")
         {
             sprite.sprite = explosion;
-            Destroy(gameObject, 3f);
+            source.Play();
+            Destroy(gameObject, 2f);
         }
     }
 }
