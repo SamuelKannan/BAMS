@@ -12,11 +12,6 @@ public class PlayerThreeScore : MonoBehaviour
     [SerializeField] int obstaclepoints = 25;
     [SerializeField] GameObject explosion;
 
-    void Start()
-    {
-        explosion.SetActive(false);
-    }
-
     void Update()
     {
         if (baseScore <= 0)
@@ -42,7 +37,7 @@ public class PlayerThreeScore : MonoBehaviour
         else if (collision.gameObject.tag == "Obstacle")
         {
             baseScore -= obstaclepoints;
-            scoreText.text = "P1 Score = " + baseScore.ToString();
+            scoreText.text = "P3 Score = " + baseScore.ToString();
         }
     }
 }

@@ -5,9 +5,9 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] Sprite explosion;
-    AudioSource source;
     SpriteRenderer sprite;
-    
+    AudioSource source;
+
 
     void Start()
     {

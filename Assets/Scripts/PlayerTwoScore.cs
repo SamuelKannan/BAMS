@@ -12,11 +12,6 @@ public class PlayerTwoScore : MonoBehaviour
     [SerializeField] int obstaclepoints = 25;
     [SerializeField] GameObject explosion;
 
-    void Start()
-    {
-        explosion.SetActive(false);
-    }
-
     void Update()
     {
         if (baseScore <= 0)
