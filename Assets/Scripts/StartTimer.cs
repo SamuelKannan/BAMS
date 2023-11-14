@@ -37,7 +37,7 @@ public class StartTimer : MonoBehaviour
             player2.enabled = true;
             player3.enabled = true;
             player4.enabled = true;
-            Debug.Log("am i running: " + speed.enabled);
+            
         }
     }
 
