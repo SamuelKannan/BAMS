@@ -7,6 +7,10 @@ public class StartTimer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timer;
     [SerializeField] float targetTime = 3f;
+    [SerializeField] PlayerOneMovement player1;
+    [SerializeField] PlayerTwoMovement player2;
+    [SerializeField] PlayerThreeMovement player3;
+    [SerializeField] PlayerFourMovement player4;
     CameraSpeed speed;
     int timeText;
 
@@ -18,7 +22,6 @@ public class StartTimer : MonoBehaviour
     void Update()
     {
         Invoke("Timer", 1f);
-        //Timer();
     }
 
     void Timer()
@@ -28,9 +31,14 @@ public class StartTimer : MonoBehaviour
         timer.text = timeText.ToString();
         if (targetTime <= 1.0f)
         {
-            timer.text = "Go";
+            timer.text = "Go!";
             speed.enabled = true;
-            //timer.gameObject.SetActive(false);
+            player1.enabled = true;
+            player2.enabled = true;
+            player3.enabled = true;
+            player4.enabled = true;
+            Debug.Log("am i running: " + speed.enabled);
         }
     }
+
 }

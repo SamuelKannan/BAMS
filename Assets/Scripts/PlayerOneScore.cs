@@ -21,23 +21,28 @@ public class PlayerOneScore : MonoBehaviour
         }
     }
 
+    public int GetScore
+    {
+        get { return baseScore;}
+    }
+
     //Score Functionality
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Correct")
         {
             baseScore += correctPoints;
-            scoreText.text = "P1 Score = " + baseScore.ToString();
+            scoreText.text = "P1 Points = " + baseScore.ToString();
         }
         else if (collision.gameObject.tag == "Incorrect")
         {
             baseScore -= inCorrectPoints;
-            scoreText.text = "P1 Score = " + baseScore.ToString();
+            scoreText.text = "P1 Points = " + baseScore.ToString();
         }
         else if (collision.gameObject.tag == "Obstacle")
         {
             baseScore -= obstaclepoints;
-            scoreText.text = "P1 Score = " + baseScore.ToString();
+            scoreText.text = "P1 Points = " + baseScore.ToString();
         }
     }
 

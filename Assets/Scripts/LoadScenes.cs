@@ -19,4 +19,9 @@ public class LoadScenes : MonoBehaviour
     {
         SceneManager.LoadScene("How to Play");
     }
+
+    public void LoadControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
 }
