@@ -23,6 +23,8 @@ public class Teleporting : MonoBehaviour
     SpriteRenderer two;
     SpriteRenderer three;
     SpriteRenderer four;
+    Vector3 spaceCamera = new Vector3(0.04f, -2.8f, -10f);
+    Vector3 beachCamera = new Vector3(41.62f, -4f, -10f);
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +69,8 @@ public class Teleporting : MonoBehaviour
         beachTwo.SetActive(true);
         beachThree.SetActive(true);
         beachFour.SetActive(true);
-        camera.transform.position = new Vector3(41.62f, -4f, -10f);
+
+        camera.transform.position = beachCamera;
         playerOne.transform.position = new Vector3(34.6f, -7.47f, 0f);
         playerTwo.transform.position = new Vector3(37.1f, -7.47f, 0f);
         playerThree.transform.position = new Vector3(39.6f, -7.47f, 0f);

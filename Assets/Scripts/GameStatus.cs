@@ -59,6 +59,7 @@ public class GameStatus : MonoBehaviour
         CheckPlayers();
         PlayersDeath();
         Debug.Log("Remaining players: " + remainingPlayers);
+        Debug.Log("Player 1 Score: " + p1Score.GetScore);
     }
 
     void CheckPlayers()
@@ -115,8 +116,9 @@ public class GameStatus : MonoBehaviour
 
     void PlayersDeath()
     {
-        if (p1Score.GetScore == 0)
+        if (p1Score.GetScore == 0 && playerOneActive == true)
         {
+            playerOneActive = false;
             scorePlayer1.SetActive(false);
             attackPlayer1.SetActive(false);
             finishOne.SetActive(true);
@@ -125,8 +127,9 @@ public class GameStatus : MonoBehaviour
             Win();
         }
 
-        if (p2Score.GetScore == 0)
+        if (p2Score.GetScore == 0 && playerTwoActive == true)
         {
+            playerTwoActive = false;
             scorePlayer2.SetActive(false);
             attackPlayer2.SetActive(false);
             finishTwo.SetActive(true);
@@ -135,8 +138,9 @@ public class GameStatus : MonoBehaviour
             Win();
         }
 
-        if (p3Score.GetScore == 0)
+        if (p3Score.GetScore == 0 && playerThreeActive == true)
         {
+            playerThreeActive = false;
             scorePlayer3.SetActive(false);
             attackPlayer3.SetActive(false);
             finishThree.SetActive(true);
@@ -145,8 +149,9 @@ public class GameStatus : MonoBehaviour
             Win();
         }
 
-        if (p4Score.GetScore == 0)
+        if (p4Score.GetScore == 0 && playerFourActive == true)
         {
+            playerFourActive = false;
             scorePlayer4.SetActive(false);
             attackPlayer4.SetActive(false);
             finishFour.SetActive(true);
