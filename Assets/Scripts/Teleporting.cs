@@ -23,8 +23,10 @@ public class Teleporting : MonoBehaviour
     SpriteRenderer two;
     SpriteRenderer three;
     SpriteRenderer four;
-    Vector3 spaceCamera = new Vector3(0.04f, -2.8f, -10f);
-    Vector3 beachCamera = new Vector3(41.62f, -4f, -10f);
+    Vector3 spaceCamera = new Vector3(0.04f, -2.54f, -10f);
+    Vector3 beachCamera = new Vector3(41.62f, -2.54f, -10f);
+    Vector3 highwayCamera = new Vector3(79.79f, -2.54f, -10f);
+
     // Start is called before the first frame update
     void Start()
     {
