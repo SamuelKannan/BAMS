@@ -7,6 +7,7 @@ public class PlayerOneMovement : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI playerAttack;
     [SerializeField] float targetTime = 7.0f;
+    //[SerializeField] Sprite[] spriteList;
     AudioSource source;
     Rigidbody2D pushedBody;
     SpriteRenderer sprite;
