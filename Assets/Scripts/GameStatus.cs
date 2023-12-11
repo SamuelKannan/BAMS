@@ -58,8 +58,28 @@ public class GameStatus : MonoBehaviour
     {
         CheckPlayers();
         PlayersDeath();
-        Debug.Log("Remaining players: " + remainingPlayers);
-        Debug.Log("Player 1 Score: " + p1Score.GetScore);
+        /*Debug.Log("Remaining players: " + remainingPlayers);
+        Debug.Log("Player 1 Score: " + p1Score.GetScore);*/
+    }
+
+    public int GetOneScore()
+    {
+        return p1Score.GetScore;
+    }
+
+    public int GetTwoScore()
+    {
+        return p2Score.GetScore;
+    }
+
+    public int GetThreeScore()
+    {
+        return p3Score.GetScore;
+    }
+
+    public int GetFourScore()
+    {
+        return p4Score.GetScore;
     }
 
     void CheckPlayers()

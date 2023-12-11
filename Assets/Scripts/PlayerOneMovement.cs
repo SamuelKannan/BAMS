@@ -7,7 +7,6 @@ public class PlayerOneMovement : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI playerAttack;
     [SerializeField] float targetTime = 7.0f;
-    //[SerializeField] Sprite[] spriteList;
     AudioSource source;
     Rigidbody2D pushedBody;
     SpriteRenderer sprite;
@@ -24,6 +23,17 @@ public class PlayerOneMovement : MonoBehaviour
     private float timeElasped;
     private bool inContact = false;
     private bool isReady = true;
+    private bool passed = false;
+
+    public bool GetPassed
+    {
+        get { return passed; }
+    }
+
+    public void SetPassed(bool pass)
+    {
+       passed = pass;
+    }
 
 
     void Start()
@@ -82,12 +92,14 @@ public class PlayerOneMovement : MonoBehaviour
         else if (collision.tag == "Correct")
         {
             sprite.color = Color.green;
+            passed = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         sprite.color = Color.white;
+        passed = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
